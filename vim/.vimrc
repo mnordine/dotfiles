@@ -73,5 +73,12 @@ set autoindent
 set ttyfast
 set undofile
 set relativenumber
-"set ruler
+set wildmenu
+set wildmode=list:longest
+set cursorline
+set hidden
+set backspace=indent,eol,start
+set laststatus=2
+set showmode
+set showcmd
 
