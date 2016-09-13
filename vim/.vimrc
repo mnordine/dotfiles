@@ -96,3 +96,8 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 
+set wrap
+set textwidth=119
+set formatoptions=qrn1
+set colorcolumn=125
+
