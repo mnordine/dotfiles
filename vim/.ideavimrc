@@ -1,0 +1,65 @@
+set nocompatible " required
+filetype off     " required
+
+set nu " show line numbers
+set clipboard=unnamed " use system clipboard
+set encoding=utf-8
+
+set mouse=a
+
+" Open new split below or to the right, more natural
+set splitbelow
+set splitright
+
+" Don't bother with ctrl-w
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+inoremap jj <ESC>
+
+syntax on
+
+filetype plugin indent on
+" show existing tab with 2 spaces width
+set tabstop=2
+" when indeting with '>', use 2 spaces width
+set shiftwidth=2
+set softtabstop=2
+" On pressing tab, insert 2 spaces
+set expandtab
+
+set autoindent
+set ttyfast
+set undofile
+set relativenumber
+set wildmenu
+set wildmode=list:longest
+set cursorline
+set hidden
+set backspace=indent,eol,start
+set laststatus=2
+set showmode
+set showcmd
+
+let mapleader = ","
+
+" These seem to cause issues with search
+"nnoremap / /\v
+"vnoremap / /\v
+
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+set showmatch
+set hlsearch
+nnoremap <leader><space> :noh<cr>
+nnoremap <tab> %
+vnoremap <tab> %
+
+set wrap
+set textwidth=119
+set formatoptions=qrn1
+set colorcolumn=125
