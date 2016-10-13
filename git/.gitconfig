@@ -1,0 +1,27 @@
+[user]
+[color]
+	ui = true
+[core]
+	excludesfile = /Users/<user_name_here>/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/<user_name_here>/.stCommitMsg
+[credential]
+	helper = osxkeychain
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  hide = update-index --assume-unchanged
+  show = update-index --no-assume-unchanged
+  ls-hidden = "!git ls-files -v | grep ^h | cut -c 3-"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+[lfs]
+  bath = true
+  concurrenttransfers = 12
