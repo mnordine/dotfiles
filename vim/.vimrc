@@ -58,7 +58,7 @@ call vundle#end()
 if has('vim_starting')
   set nocompatible
   set runtimepath+=~/.vim/bundle/dart-vim-plugin
-endif  
+endif
 
 filetype plugin indent on
 " show existing tab with 2 spaces width
@@ -101,3 +101,6 @@ set textwidth=119
 set formatoptions=qrn1
 set colorcolumn=125
 
+" make < > shifts keep selection
+vnoremap < <gv
+vnoremap > >gv

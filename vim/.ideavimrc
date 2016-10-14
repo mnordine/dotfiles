@@ -63,3 +63,7 @@ set wrap
 set textwidth=119
 set formatoptions=qrn1
 set colorcolumn=125
+
+" make < > shifts keep selection
+vnoremap < <gv
+vnoremap > >gv
