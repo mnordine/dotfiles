@@ -14,12 +14,17 @@ POWERLINE_HIDE_HOST_NAME="true"
 POWERLINE_PATH="short"
 POWERLINE_DETECT_SSH="true"
 
+# Nicer history
+export HISTSIZE=100000
+export HISTFILE="$HOME/.history"
+export SAVEHIST=$HISTSIZE
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -34,7 +39,7 @@ POWERLINE_DETECT_SSH="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -59,7 +64,7 @@ POWERLINE_DETECT_SSH="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm brew extract osx z)
+plugins=(git npm brew extract osx z docker vi-mode)
 
 # User configuration
 
@@ -94,6 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ccat='pygmentize -g'
 alias rm=trash
+alias dc=docker-compose
 
 HOMEBREW_NO_ANALYTICS=1
 
@@ -113,3 +119,4 @@ man() {
 }
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
