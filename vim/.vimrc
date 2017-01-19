@@ -69,6 +69,7 @@ set softtabstop=2
 " On pressing tab, insert 2 spaces
 set expandtab
 
+set history=10000
 set autoindent
 set ttyfast
 set undofile
