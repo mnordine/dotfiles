@@ -104,3 +104,6 @@ set colorcolumn=125
 " make < > shifts keep selection
 vnoremap < <gv
 vnoremap > >gv
+" Fix tmux + vim colors
+set term=screen-256color
+
