@@ -82,6 +82,7 @@ set backspace=indent,eol,start
 set laststatus=2
 set showmode
 set showcmd
+set autoread
 
 let mapleader = ","
 
