@@ -100,6 +100,7 @@ source $ZSH/oh-my-zsh.sh
 alias ccat='pygmentize -g'
 alias rm=trash
 alias dc=docker-compose
+alias git-pull-all='find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;'
 
 HOMEBREW_NO_ANALYTICS=1
 
